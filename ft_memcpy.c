@@ -1,27 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etien <etien@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/03 15:55:55 by etien             #+#    #+#             */
-/*   Updated: 2024/06/04 13:00:54 by etien            ###   ########.fr       */
+/*   Created: 2024/06/04 10:58:40 by etien             #+#    #+#             */
+/*   Updated: 2024/06/04 14:01:24 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-void	*ft_memset(void	*b, int c, size_t len)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned char	*a;
+	unsigned char		*d;
+	const unsigned char	*s;
 
-	a = (unsigned char *)b;
-	while (len--)
+	if (!dst || !src)
+		return (dst);
+	d = (unsigned char *)dst;
+	s = (const unsigned char *)src;
+	while (n--)
 	{
-		*a++ = (unsigned char)c;
+		*d++ = *s++;
 	}
-	return (b);
+	return (dst);
 }
 
 /*
@@ -29,16 +33,15 @@ void	*ft_memset(void	*b, int c, size_t len)
 #include <string.h>
 
 int main() {
-    char buffer[10];
+    char dest[20] = "Hello, World!";
+    const char *src = "OpenAI";
 
-    // Use the custom memset function
-    ft_memset(buffer, 'A', sizeof(buffer));
+    printf("Before ft_memcpy: %s\n", dest);
 
-    // Print the buffer to verify it was correctly set
-    for (size_t i = 0; i < sizeof(buffer); i++) {
-        printf("%c ", buffer[i]);
-    }
-    printf("\n");
+    // Call your ft_memcpy function
+    ft_memcpy(dest + 7, src, strlen(src) + 1);
+
+    printf("After ft_memcpy: %s\n", dest);
 
     return 0;
 }
