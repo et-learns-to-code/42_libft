@@ -3,17 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: etien <etien@student.42kl.edu.my>          +#+  +:+       +#+        */
+/*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 12:31:24 by etien             #+#    #+#             */
-/*   Updated: 2024/06/03 12:37:58 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/05 14:19:41 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_isalnum(int c)
 {
-	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')
-		|| (c >= '0' && c <= '9'));
+	return (ft_isalpha(c) || ft_isdigit(c));
 }
 
 /*
@@ -26,13 +27,13 @@ int main() {
 
     printf("Testing ft_isalnum function:\n");
     for (int i = 0; i < num_test_chars; i++) {
-        printf("ft_isalnum('%c') = %d\n", test_chars[i], 
+        printf("ft_isalnum('%c') = %d\n", test_chars[i],
 				ft_isalnum(test_chars[i]));
     }
 
     printf("\nTesting isalnum function from manual:\n");
     for (int i = 0; i < num_test_chars; i++) {
-        printf("isalnum('%c') = %d\n", test_chars[i], 
+        printf("isalnum('%c') = %d\n", test_chars[i],
 				isalnum(test_chars[i]));
     }
 
