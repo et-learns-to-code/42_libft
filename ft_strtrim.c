@@ -6,39 +6,48 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 11:04:29 by etien             #+#    #+#             */
-/*   Updated: 2024/06/07 11:25:33 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/07 14:14:59 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strtrim(char const *s1, char const *set)
+#include "libft.h"
+
+static char	*trim_str(char const *str, unsigned int start, size_t len);
+
+static int	match_set(const char *set, char c);
+
+char	*ft_strtrim(char const *s1, char const *set)
+{
+	unsigned int	start;
+	unsigned int	end;
+
+	if (ft_strlen(s1) == 0)
+		return (ft_strdup(""));
+	start = 0;
+	end = ft_strlen(s1) - 1;
+	while (match_set(set, s1[start]))
+		start++;
+	while (match_set(set, s1[end]))
+		end--;
+	return (trim_str(s1, start, (size_t)(end - start + 1)));
+}
+
+static char	*trim_str(char const *s1, unsigned int start, size_t len)
 {
 	char	*str;
-	int	start_index;
-	int	end_index;
+	size_t	i;
 
-	start_index = 0;
-	end_index = ft_strlen(s1) - 1;
-	while(match_set(set, s1[start_index]))
-		start_index++;
-	while(match_set(set, s1[end_index]))
-		end_index--;
-
-	USE END INDEX TO FIND LEN VALUE
-	char	*ft_substr(char const *s, unsigned int start, size_t len)
-
+	if (len <= 0)
+		return (ft_strdup(""));
+	str = ft_calloc(len + 1, sizeof(char));
 	if (!str)
 		return (NULL);
-
-
-
-	Have a function that identifies index of
-	use substr to trim
-	start will be identified when running through string in order
-	length will be identified when running through string in reverse
-
-
-
-
+	i = 0;
+	while (i < len)
+	{
+		str[i] = s1[start + i];
+		i++;
+	}
 	return (str);
 }
 
@@ -55,3 +64,26 @@ static int	match_set(const char *set, char c)
 	}
 	return (0);
 }
+
+/*
+//CANNOT USE SUBSTR, BECAUSE MEMORY BLOCK ALLOCATED BY CALLOC
+//WILL BE OVERWRITTEN RESULTING IN MEMORY LEAK
+
+#include <stdio.h>
+
+int main() {
+    // Test cases
+    char *s1 = "ababaaaMy name is Simonbbaaabba";
+    char *set = "ab";
+    char *trimmed = ft_strtrim(s1, set);
+
+    // Output the original string and the trimmed string
+    printf("Original string: \"%s\"\n", s1);
+    printf("Trimmed string: \"%s\"\n", trimmed);
+
+    // Free dynamically allocated memory
+    free(trimmed);
+
+    return 0;
+}
+*/
