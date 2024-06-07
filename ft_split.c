@@ -6,7 +6,7 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 14:17:02 by etien             #+#    #+#             */
-/*   Updated: 2024/06/07 17:42:06 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/07 17:49:37 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,6 @@ static int	word_count(char const *s, char c);
 static void	*free_all(char **arr, int n);
 static char	*fill_word(char const *s, int start, int end);
 
-// word_start will be passed in as an array index to fill_word function
-// It will equal -1 when it is not the start of the word, and equal i
-// when a new word is found. To distinguish between these states,
-// it cannot equal to 0 because 0 is a valid array index and
-// will create confusion. i will continue incrementing until
-// a separator is found, then the word will be stored in the array
-// by calling fill_word.
 char	**ft_split(char const *s, char c)
 {
 	char	**arr;
@@ -57,6 +50,19 @@ static int	word_count(char const *s, char c)
 	return (count);
 }
 
+// word_start will be passed in as an array index to fill_word function
+// It will equal -1 when it is not the start of the word, and equal i
+// when a new word is found. To distinguish between these states,
+// it cannot equal to 0 because 0 is a valid array index and
+// will create confusion. i will continue incrementing until
+// a separator is found, then the word will be stored in the array
+// by calling fill_word.
+
+// function detects start of word by checking that char is not a separator
+// and word start marker is off (it will then be switched on); end of word
+// is detected when i index is either a separator or the end of the entire
+// string when end of word is detected, the entire word is stored in an
+// array then the word marker is switched off again
 static char	**fill_arr(char const *s, char c, char **arr)
 {
 	size_t	i;
@@ -102,8 +108,8 @@ static char	*fill_word(char const *s, int start, int end)
 	return (word);
 }
 
-// completely clears all previously assigned memory if any one
-// string fails to have memory allocated
+// completely clears all previously assigned memory if any one string
+// fails to have memory allocated
 static void	*free_all(char **arr, int n)
 {
 	int	i;
