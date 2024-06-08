@@ -1,37 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/08 17:01:23 by etien             #+#    #+#             */
-/*   Updated: 2024/06/08 17:22:15 by etien            ###   ########.fr       */
+/*   Created: 2024/06/08 17:23:00 by etien             #+#    #+#             */
+/*   Updated: 2024/06/08 17:30:20 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// create temp variable to avoid modifying the existing list
-int	ft_lstsize(t_list *lst)
+t_list	*ft_lstlast(t_list *lst)
 {
 	t_list	*temp;
-	int		size;
 
+	if (!lst)
+		return (NULL);
 	temp = lst;
-	size = 0;
-	while (temp)
+	while (temp->next)
 	{
-		size++;
 		temp = temp->next;
 	}
-	return (size);
+	return (temp);
 }
 
 /*
 #include <stdio.h>
 
-// Main function to test ft_lstsize
+// Main function to test ft_lstlast
 int main() {
     // Create a linked list with three nodes
     t_list *head = (t_list *)malloc(sizeof(t_list));
@@ -55,9 +53,12 @@ int main() {
     }
     printf("NULL\n");
 
-    // Get the size of the linked list using ft_lstsize
-    int size = ft_lstsize(head);
-    printf("Size of the linked list: %d\n", size);
+    // Get the last node of the linked list using ft_lstlast
+    t_list *last = ft_lstlast(head);
+    if (last)
+        printf("Last node: %s\n", (char *)last->content);
+    else
+        printf("The list is empty.\n");
 
     // Free the allocated memory for the nodes
     free(head);
