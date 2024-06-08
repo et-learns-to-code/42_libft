@@ -1,35 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/03 12:17:37 by etien             #+#    #+#             */
-/*   Updated: 2024/06/08 17:03:31 by etien            ###   ########.fr       */
+/*   Created: 2024/06/08 17:01:23 by etien             #+#    #+#             */
+/*   Updated: 2024/06/08 17:03:49 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+int ft_lstsize(t_list *lst)
 {
-	return (c >= '0' && c <= '9');
+
+
+
+
+
 }
-
-/*
-#include <stdio.h>
-
-int main() {
-    char test_chars[] = {'A', 'b', '3', '$', '9'};
-    int num_test_chars = sizeof(test_chars) / sizeof(test_chars[0]);
-
-    printf("Testing ft_isdigit function:\n");
-    for (int i = 0; i < num_test_chars; i++) {
-        printf("ft_isdigit('%c') = %d\n", test_chars[i],
-				ft_isdigit(test_chars[i]));
-    }
-
-	return 0;
-}
-*/

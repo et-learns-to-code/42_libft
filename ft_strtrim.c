@@ -6,14 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 11:04:29 by etien             #+#    #+#             */
-/*   Updated: 2024/06/07 14:14:59 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/08 17:06:12 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 static char	*trim_str(char const *str, unsigned int start, size_t len);
-
 static int	match_set(const char *set, char c);
 
 char	*ft_strtrim(char const *s1, char const *set)

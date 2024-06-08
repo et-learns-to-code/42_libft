@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: etien <etien@student.42kl.edu.my>          +#+  +:+       +#+        */
+/*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 12:46:12 by etien             #+#    #+#             */
-/*   Updated: 2024/06/03 14:17:54 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/08 17:03:24 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isascii(int c)
 {
@@ -25,13 +27,13 @@ int main() {
 
     printf("Testing ft_isascii function:\n");
     for (int i = 0; i < num_test_chars; i++) {
-        printf("ft_isascii('%c') = %d\n", test_chars[i], 
+        printf("ft_isascii('%c') = %d\n", test_chars[i],
 				ft_isascii(test_chars[i]));
     }
 
     printf("\nTesting isascii function from manual:\n");
     for (int i = 0; i < num_test_chars; i++) {
-        printf("isascii('%c') = %d\n", test_chars[i], 
+        printf("isascii('%c') = %d\n", test_chars[i],
 				isascii(test_chars[i]));
     }
 

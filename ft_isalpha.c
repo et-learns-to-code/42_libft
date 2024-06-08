@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: etien <etien@student.42kl.edu.my>          +#+  +:+       +#+        */
+/*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 11:52:56 by etien             #+#    #+#             */
-/*   Updated: 2024/06/04 14:05:07 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/08 17:03:15 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {
@@ -24,9 +26,9 @@ int main() {
     int num_test_chars = sizeof(test_chars) / sizeof(test_chars[0]);
 
     printf("Testing ft_isalpha function:\n");
-    for (int i = 0; i < num_test_chars; i++) 
+    for (int i = 0; i < num_test_chars; i++)
 	{
-        printf("ft_isalpha('%c') = %d\n", test_chars[i], 
+        printf("ft_isalpha('%c') = %d\n", test_chars[i],
 				ft_isalpha(test_chars[i]));
     }
 

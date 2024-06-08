@@ -6,9 +6,11 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 12:22:57 by etien             #+#    #+#             */
-/*   Updated: 2024/06/08 12:30:06 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/08 17:04:16 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: etien <etien@student.42kl.edu.my>          +#+  +:+       +#+        */
+/*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 14:24:35 by etien             #+#    #+#             */
-/*   Updated: 2024/06/03 14:30:50 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/08 17:03:37 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
@@ -25,13 +27,13 @@ int main() {
 
     printf("Testing ft_isprint function:\n");
     for (int i = 0; i < num_test_chars; i++) {
-        printf("ft_isprint('%c') = %d\n", test_chars[i], 
+        printf("ft_isprint('%c') = %d\n", test_chars[i],
 		ft_isprint(test_chars[i]));
     }
 
     printf("\nTesting isprint function from manual:\n");
     for (int i = 0; i < num_test_chars; i++) {
-        printf("isprint('%c') = %d\n", test_chars[i], 
+        printf("isprint('%c') = %d\n", test_chars[i],
 		isprint(test_chars[i]));
     }
 
