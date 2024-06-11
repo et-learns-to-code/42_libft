@@ -6,12 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 10:58:40 by etien             #+#    #+#             */
-/*   Updated: 2024/06/11 15:04:32 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:21:23 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Copies memory.
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	unsigned char		*d;

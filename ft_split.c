@@ -6,7 +6,7 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 14:17:02 by etien             #+#    #+#             */
-/*   Updated: 2024/06/11 15:52:39 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:26:35 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ static int	word_count(char const *s, char c);
 static void	*free_all(char **arr, int n);
 static char	*fill_word(char const *s, int start, int end);
 
+// Splits string into array.
 char	**ft_split(char const *s, char c)
 {
 	char	**arr;

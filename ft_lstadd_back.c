@@ -6,12 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 09:55:43 by etien             #+#    #+#             */
-/*   Updated: 2024/06/10 10:10:23 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:33:23 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Adds node to end of list.
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*last;

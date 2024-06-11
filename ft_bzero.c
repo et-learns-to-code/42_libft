@@ -6,12 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 10:10:21 by etien             #+#    #+#             */
-/*   Updated: 2024/06/05 11:23:18 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:21:09 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Zeroes memory.
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*ptr;

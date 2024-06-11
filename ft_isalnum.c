@@ -6,12 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 12:31:24 by etien             #+#    #+#             */
-/*   Updated: 2024/06/05 14:19:41 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:18:12 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Checks if character is alphanumeric.
 int	ft_isalnum(int c)
 {
 	return (ft_isalpha(c) || ft_isdigit(c));

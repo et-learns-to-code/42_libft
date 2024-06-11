@@ -6,12 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 12:22:57 by etien             #+#    #+#             */
-/*   Updated: 2024/06/11 16:17:16 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:29:12 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Applies function to each character with index.
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	unsigned int	i;

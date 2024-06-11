@@ -6,12 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 11:02:31 by etien             #+#    #+#             */
-/*   Updated: 2024/06/10 13:12:26 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:32:22 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Iterates through list, applying function.
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	while (lst)

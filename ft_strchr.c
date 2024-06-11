@@ -6,12 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 16:07:35 by etien             #+#    #+#             */
-/*   Updated: 2024/06/05 16:25:59 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:23:24 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Finds first occurrence of character.
 char	*ft_strchr(const char *s, int c)
 {
 	while (*s)

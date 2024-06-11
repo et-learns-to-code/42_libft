@@ -6,12 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 12:46:12 by etien             #+#    #+#             */
-/*   Updated: 2024/06/08 17:03:24 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:19:30 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Checks if character is ASCII.
 int	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);

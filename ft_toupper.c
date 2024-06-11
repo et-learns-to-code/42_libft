@@ -6,12 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 15:55:43 by etien             #+#    #+#             */
-/*   Updated: 2024/06/08 17:05:22 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:22:43 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Converts character to uppercase.
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')

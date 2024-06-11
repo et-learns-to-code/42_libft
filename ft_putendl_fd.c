@@ -6,12 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 12:59:23 by etien             #+#    #+#             */
-/*   Updated: 2024/06/11 16:17:04 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:30:12 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Writes string with newline to file descriptor.
 void	ft_putendl_fd(char *s, int fd)
 {
 	if (!s)

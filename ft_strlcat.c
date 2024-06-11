@@ -6,7 +6,7 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 14:27:41 by etien             #+#    #+#             */
-/*   Updated: 2024/06/11 16:15:03 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:22:23 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 // if (dst_len >= dstsize) handles scenario where destination
 // string might not be properly null-terminated
+
+// Concatenates strings with size limit.
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	src_len;

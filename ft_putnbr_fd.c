@@ -6,12 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 14:17:00 by etien             #+#    #+#             */
-/*   Updated: 2024/06/08 14:43:08 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:30:26 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Writes integer to file descriptor.
 void	ft_putnbr_fd(int n, int fd)
 {
 	char	nbr;

@@ -6,12 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 17:23:00 by etien             #+#    #+#             */
-/*   Updated: 2024/06/08 17:30:20 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:34:01 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Returns last node of list.
 t_list	*ft_lstlast(t_list *lst)
 {
 	t_list	*temp;

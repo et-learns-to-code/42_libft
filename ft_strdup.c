@@ -6,12 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 15:57:34 by etien             #+#    #+#             */
-/*   Updated: 2024/06/06 16:20:27 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:25:31 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Duplicates string.
 char	*ft_strdup(const char *s1)
 {
 	char	*dst;

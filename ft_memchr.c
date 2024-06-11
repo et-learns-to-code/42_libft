@@ -6,12 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 10:35:18 by etien             #+#    #+#             */
-/*   Updated: 2024/06/08 16:16:27 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:24:11 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Finds first occurrence of byte.
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	while (n)

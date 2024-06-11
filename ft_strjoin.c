@@ -6,12 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 10:39:43 by etien             #+#    #+#             */
-/*   Updated: 2024/06/11 15:56:54 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:26:03 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Joins two strings.
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*str;

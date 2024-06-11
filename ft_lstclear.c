@@ -6,12 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 10:39:06 by etien             #+#    #+#             */
-/*   Updated: 2024/06/11 16:17:11 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:32:10 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Deletes all nodes from list.
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*temp;

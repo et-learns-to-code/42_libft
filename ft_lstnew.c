@@ -6,12 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 15:32:07 by etien             #+#    #+#             */
-/*   Updated: 2024/06/08 15:52:08 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:30:44 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Creates new list node.
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*node;

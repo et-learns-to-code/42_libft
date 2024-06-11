@@ -6,12 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 17:11:02 by etien             #+#    #+#             */
-/*   Updated: 2024/06/06 10:29:41 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:23:42 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Compares strings up to n characters.
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	while (n && (*s1 || *s2))

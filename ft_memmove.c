@@ -6,12 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 14:28:57 by etien             #+#    #+#             */
-/*   Updated: 2024/06/11 15:05:39 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:21:46 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Moves memory, handles overlapping.
 void	*ft_memmove(void	*dst, const void	*src, size_t len)
 {
 	unsigned char		*d;

@@ -6,7 +6,7 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:14:47 by etien             #+#    #+#             */
-/*   Updated: 2024/06/08 11:52:25 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:27:21 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 static int	int_len(long nbr);
 
 // nbr is made into long data type to avoid issues with INT_MIN and INT_MAX
+
+// Converts integer to string.
 char	*ft_itoa(int n)
 {
 	long	nbr;

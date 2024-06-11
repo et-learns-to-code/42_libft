@@ -6,12 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 12:36:14 by etien             #+#    #+#             */
-/*   Updated: 2024/06/08 12:44:22 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:29:40 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Writes character to file descriptor.
 void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);

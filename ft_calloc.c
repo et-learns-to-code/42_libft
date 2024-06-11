@@ -6,7 +6,7 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 15:26:48 by etien             #+#    #+#             */
-/*   Updated: 2024/06/11 10:58:06 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:25:21 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@
 
 // malloc(0) typically returns a unique pointer that can be freed later
 
+// Allocates and zeros memory.
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*ptr;

@@ -6,7 +6,7 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 11:04:29 by etien             #+#    #+#             */
-/*   Updated: 2024/06/11 15:54:23 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:26:23 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 static char	*trim_str(char const *str, unsigned int start, size_t len);
 static int	match_set(const char *set, char c);
 
+// Trims set of characters from beginning and end of string.
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	unsigned int	start;

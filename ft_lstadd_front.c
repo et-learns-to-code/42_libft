@@ -6,7 +6,7 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 15:53:50 by etien             #+#    #+#             */
-/*   Updated: 2024/06/08 17:00:25 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:30:59 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 // lst points to the head of the list, by dereferencing it,
 // it will get the current first node on the list.
 // the second line updates the head of the list to the new node.
+
+// Adds node to beginning of list.
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	new->next = *lst;

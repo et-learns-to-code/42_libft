@@ -6,12 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 16:27:16 by etien             #+#    #+#             */
-/*   Updated: 2024/06/07 13:41:16 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:25:52 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Extracts substring from string.
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;

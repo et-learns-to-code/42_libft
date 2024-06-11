@@ -6,7 +6,7 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 10:16:57 by etien             #+#    #+#             */
-/*   Updated: 2024/06/11 16:17:20 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:31:54 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 // deletes a given node from the list - lst is the node to be deleted
 // only content is freed; if next is freed,
 // that would mean deleting the next node
+
+// Deletes single node from list.
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (!lst || !del)

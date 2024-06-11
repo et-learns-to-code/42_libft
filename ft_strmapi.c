@@ -6,12 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:56:13 by etien             #+#    #+#             */
-/*   Updated: 2024/06/11 15:51:15 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:28:43 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Applies function to each character and creates new array.
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*str;

@@ -6,13 +6,15 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 17:01:23 by etien             #+#    #+#             */
-/*   Updated: 2024/06/08 17:22:15 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:34:10 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 // create temp variable to avoid modifying the existing list
+
+// Returns number of list nodes.
 int	ft_lstsize(t_list *lst)
 {
 	t_list	*temp;

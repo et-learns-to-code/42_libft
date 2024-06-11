@@ -6,7 +6,7 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 14:52:52 by etien             #+#    #+#             */
-/*   Updated: 2024/06/06 15:25:06 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:25:05 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 static int	ft_isspace(int c);
 
+// Converts string to integer.
 int	ft_atoi(const char *str)
 {
 	int	result;

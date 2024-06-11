@@ -6,12 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 16:02:47 by etien             #+#    #+#             */
-/*   Updated: 2024/06/08 17:05:15 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:22:59 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Converts character to lowercase.
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')

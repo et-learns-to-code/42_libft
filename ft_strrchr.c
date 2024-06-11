@@ -6,12 +6,13 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 16:40:52 by etien             #+#    #+#             */
-/*   Updated: 2024/06/05 16:59:05 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 17:23:33 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Finds last occurrence of character.
 char	*ft_strrchr(const char *s, int c)
 {
 	char	*final;
