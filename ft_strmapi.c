@@ -6,7 +6,7 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:56:13 by etien             #+#    #+#             */
-/*   Updated: 2024/06/08 12:25:18 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 15:51:15 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char			*str;
 	unsigned int	i;
 
+	if (!s || !f)
+		return (NULL);
 	str = ft_calloc(ft_strlen(s) + 1, sizeof(char));
 	if (!str)
 		return (NULL);

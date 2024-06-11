@@ -6,7 +6,7 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 14:27:41 by etien             #+#    #+#             */
-/*   Updated: 2024/06/05 15:49:12 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 16:15:03 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	dst_len;
 
 	src_len = ft_strlen(src);
+	if (dstsize == 0)
+		return (src_len);
 	dst_len = ft_strlen(dst);
 	if (dst_len >= dstsize)
 		return (dstsize + src_len);

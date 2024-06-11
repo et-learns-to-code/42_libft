@@ -6,7 +6,7 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 14:17:02 by etien             #+#    #+#             */
-/*   Updated: 2024/06/07 17:49:37 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 15:52:39 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	**ft_split(char const *s, char c)
 {
 	char	**arr;
 
+	if (!s)
+		return (NULL);
 	arr = (char **)ft_calloc(word_count(s, c) + 1, sizeof(char *));
 	if (!arr)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 11:18:34 by etien             #+#    #+#             */
-/*   Updated: 2024/06/08 17:04:42 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 15:26:51 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	i = 0;
 	if (needle[0] == '\0')
 		return ((char *)haystack);
+	if (len == 0)
+		return (NULL);
 	while (haystack[i] && i < len)
 	{
 		j = 0;

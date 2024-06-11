@@ -6,7 +6,7 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 10:39:06 by etien             #+#    #+#             */
-/*   Updated: 2024/06/10 12:50:36 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 16:17:11 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*temp;
 
+	if (!lst || !del)
+		return ;
 	while (*lst)
 	{
 		temp = (*lst)->next;

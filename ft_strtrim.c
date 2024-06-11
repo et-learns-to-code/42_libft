@@ -6,7 +6,7 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 11:04:29 by etien             #+#    #+#             */
-/*   Updated: 2024/06/11 11:11:44 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 15:54:23 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	unsigned int	start;
 	unsigned int	end;
 
+	if (!s1 || !set)
+		return (NULL);
 	if (ft_strlen(s1) == 0)
 		return (ft_strdup(""));
 	start = 0;

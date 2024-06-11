@@ -6,7 +6,7 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 14:28:57 by etien             #+#    #+#             */
-/*   Updated: 2024/06/05 11:23:01 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 15:05:39 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memmove(void	*dst, const void	*src, size_t len)
 	unsigned char		*d;
 	const unsigned char	*s;
 
-	if (!dst || !src)
+	if (!dst && !src)
 		return (dst);
 	if (dst == src)
 		return (dst);
