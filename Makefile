@@ -21,7 +21,7 @@ CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror
 
-AR = ar rc
+AR = ar -rc
 
 RM = rm -f
 
@@ -29,7 +29,6 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	$(AR) $(NAME) $(OBJ)
-	ranlib $(NAME)
 
 bonus: $(OBJB)
 	$(AR) $(NAME) $(OBJB)
