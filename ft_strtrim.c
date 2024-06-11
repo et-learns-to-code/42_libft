@@ -6,7 +6,7 @@
 /*   By: etien <etien@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 11:04:29 by etien             #+#    #+#             */
-/*   Updated: 2024/06/08 17:06:12 by etien            ###   ########.fr       */
+/*   Updated: 2024/06/11 11:11:44 by etien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (ft_strdup(""));
 	start = 0;
 	end = ft_strlen(s1) - 1;
-	while (match_set(set, s1[start]))
+	while (start <= end && match_set(set, s1[start]))
 		start++;
-	while (match_set(set, s1[end]))
+	while (end >= start && match_set(set, s1[end]))
 		end--;
 	return (trim_str(s1, start, (size_t)(end - start + 1)));
 }
@@ -36,7 +36,7 @@ static char	*trim_str(char const *s1, unsigned int start, size_t len)
 	char	*str;
 	size_t	i;
 
-	if (len <= 0)
+	if (len == 0)
 		return (ft_strdup(""));
 	str = ft_calloc(len + 1, sizeof(char));
 	if (!str)
@@ -65,8 +65,8 @@ static int	match_set(const char *set, char c)
 }
 
 /*
-//CANNOT USE SUBSTR, BECAUSE MEMORY BLOCK ALLOCATED BY CALLOC
-//WILL BE OVERWRITTEN RESULTING IN MEMORY LEAK
+// CANNOT USE SUBSTR, BECAUSE MEMORY BLOCK ALLOCATED BY CALLOC
+// WILL BE OVERWRITTEN RESULTING IN MEMORY LEAK
 
 #include <stdio.h>
 
